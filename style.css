@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*,::after,::before{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+body{
+  font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+}
+h1,h2,h3{
+  font-weight: 900;
+}
+.d-flex{
+  display: flex;
+}
+.jcc{
+  justify-content: center;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.aic{
+  align-items: center;
+}
+.px-16{
+  padding: 0 64px;
+}
+.py-16{
+  padding: 64px 0;
+}
+.mt-16{
+  margin-top: 64px;
+}
+.my-12{
+  margin: 48px 0;
+}
+.mb-12{
+  margin-bottom: 48px;
+}
+.mb-6{
+  margin-bottom: 24px;
+}
+.mb-3{
+  margin-bottom: 12px;
+}
+.g-6{
+  gap: 24px;
+}
+.reverse{
+  flex-direction: row-reverse;
+}
+
+/* nav */
+.menu li{
+  padding: 12px 0;
+  margin-left: 24px;
+}
+.menu a{
+  color: #888585;
+  display: flex;
+}
+.menu a:hover{
+  color: #916000;
+}
+
+/* header */
+.header{
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+}
+.wrap{
+  padding: 250px 0;
+  width: 42%;
+  margin-left: auto;
+}
+.wrap h1{
+  color: #ffffff;
+}
+.wrap p{
+  color: #ffffff;
+  text-align: start;
+}
+.shop-link a{
+  color: #ffffff;
+}
+.header-text{
+  width: 60%;
+}
+.shop-link{
+  margin-top: 12px;
+}
+.shop-link a{
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 4px 0;
+  max-width: 100%;
+}
+.shop-link a:hover{
+  background: #91828231;
+}
+
+/* perfume-product */
+.card-list{
+  flex-wrap: wrap;
+}
+.feature-img-content{
+  width: 50%;
+}
+.feature-text{
+  width: 50%;
+}
+.feature-img{
+  width: 100%;
+  object-fit: cover;
+}
+.more{
+  color: rgb(199, 189, 47)
+}
+.plan a{
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  width: 250px;
+  padding: 4px 0;
+}
+.plan:hover a{
+  background: #91828231;
+}
+
+/* hot */
+.hot-product-column{
+  width: 30%;
+}
+.hot-product{
+  flex-direction: column;
+}
+.hot-product-img{
+  width: 450px;
+  height: 550px;
+  object-fit: cover;
+}
+.hot-product p{
+  color: #888585;
+}
+.price{
+  color: #88858567;
+}
+.hot{
+  background: #ddd9d9a1;
+}
+.saleoff{
+  margin-top: 12px;
+}
+
+/* recycle */
+.bottle{
+  display: flex;
+}
+
+/* sub */
+.sub{
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+}
+.sub-area{
+  padding: 360px 0 128px 128px;
+}
+form{
+  display: flex;
+}
+form input{
+  border: 2px solid #916000;
+  padding: 8px;
+}
+form button{
+  border: 2px solid #916000;
+  background: #916000;
+  color: #ffffff;
+}
+
+/* footer */
+.footer{
+  background: #916000;
+}
+.footer-menu li{
+  padding: 12px;
+}
+.footer-logo{
+  color: #ffffff;
+}
+.footer-menu li a{
+  color: #ffffff;
+}
+.footer-menu li a:hover{
+  color: #f1f509ab;
+}
+.footer-logo-img{
+  margin-right: 16px;
+}
+.footer-logo p{
+  font-size: 12px;
+}
+/* Home RWD */
+@media screen and (max-width: 992px) {
+  .nav{
+    padding: 0 12px;
+  }
+  .feature{
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-img-content{
+    width: 100%;
+    padding: 0 12px;
+  }
+  .feature-text{
+    width: 100%;
+  }
+  
+  .hot-product-list{
+    flex-direction: column;
+  }
+  .hot-product-column{
+    width: 100%;
+  }
+  .hot-product-img{
+    width: 100%;
+    height: auto;
+  }
+  .hot-product{
+    text-align: center;
+  }
+  .recycle{
+    flex-direction: column;
+    padding: 0 12px;
+  }
+}
+
+
+
+/* brand */
+.brand{
+  background: #916000;
+}
+.brand-list{
+  padding: 8px 0;
+}
+.brand-list li{
+  margin-right: 24px;
+}
+.brand-list li a{
+  color: #ffffff;
+}
+.brand-list li a:hover{
+  color: #f1f509ab;
+}
+
+
+/* product */
+.product{
+  margin-top: 80px;
+}
+.product-list{
+  flex-wrap: wrap;
+}
+.product-column{
+  width: 25%;
+  margin-bottom: 24px;
+}
+.product-card{
+  padding: 20px;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-card p{
+  color: #888585;
+}
+.product-card img{
+  height: 250px; 
+  object-fit: cover;
+}
+.purchase-icon .material-symbols-outlined{
+  color: #916000;
+}
+
+/* pagination */
+.pagination li a{
+  color: black;
+}
+.pagination li a:hover{
+  color: #916000;
+  border-bottom: 2px solid #916000;
+}
+
+/* product RWD */
+@media screen and (max-width:992px)  {
+  .nav{
+    padding: 0 12px;
+  }
+  .product-column{
+    width: 50%;
+  }
+  .product-card img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width:768px){
+  .brand{
+    display: none;
+  }
+}
