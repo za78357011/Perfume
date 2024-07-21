@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *,::after,::before{
   box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 body{
-  font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     font-size: 1rem;
 }
@@ -19,17 +19,17 @@ img {
 a{
   text-decoration: none;
 }
-h1{
-  font-size: 40px;
-}
 h2{
   font-size: 32px;
 }
 h3{
   font-size: 24px;
 }
-h1,h2,h3{
-  font-weight: 900;
+h4{
+  font-size: 20px;
+}
+h2,h3,h4{
+  font-weight: 700;
 }
 .d-flex{
   display: flex;
@@ -46,11 +46,14 @@ h1,h2,h3{
 .px-16{
   padding: 0 64px;
 }
+.px-8{
+  padding: 0 32px;
+}
 .py-16{
   padding: 64px 0;
 }
-.mt-16{
-  margin-top: 64px;
+.mt-8{
+  margin-top: 32px;
 }
 .my-12{
   margin: 48px 0;
@@ -95,7 +98,7 @@ h1,h2,h3{
   width: 42%;
   margin-left: auto;
 }
-.wrap h1{
+.wrap h2{
   color: #ffffff;
 }
 .wrap p{
@@ -125,10 +128,7 @@ h1,h2,h3{
   background: #91828231;
 }
 
-/* perfume-product */
-.card-list{
-  flex-wrap: wrap;
-}
+/* features */
 .feature-img-content{
   width: 50%;
 }
@@ -141,6 +141,9 @@ h1,h2,h3{
 }
 .more{
   color: rgb(199, 189, 47)
+}
+.more:hover{
+  color: #916000;
 }
 .plan a{
   color: black;
@@ -161,7 +164,7 @@ h1,h2,h3{
   flex-direction: column;
 }
 .hot-product-img{
-  width: 450px;
+  width: 480px;
   height: 550px;
   object-fit: cover;
 }
